@@ -143,7 +143,13 @@
     <ClCompile Include="f4.cpp" />
     <ClCompile Include="F4.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Medvedev1bib21050.cpp" />
     <ClCompile Include="Medvedev1bib21050.ixx" />
+    <ClCompile Include="ModuleA.cpp" />
+    <ClCompile Include="ModuleF1.cpp" />
+    <ClCompile Include="ModuleF2.cpp" />
+    <ClCompile Include="ModuleF3.cpp" />
+    <ClCompile Include="ModuleF4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

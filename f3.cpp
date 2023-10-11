@@ -4,15 +4,17 @@ namespace RBPO {
 	namespace Lab2 {
 		namespace Variant15 {
 			namespace Task3 {
-				double f3(int);
-				double a(int);
+				double f3(unsigned short);
+				double a(unsigned short);
 			};
 		};
 	};
 };
 
-double RBPO::Lab2::Variant15::Task3::f3(int n) {
-	double sum = 0;
-	for (int i = 0; i <= n; sum += a(i++));
+double RBPO::Lab2::Variant15::Task3::f3(unsigned short n) {
+	double sum = 0; int i = -1;
+	do {
+		sum += a(++i);
+	} while (i < n);
 	return sum;
 };

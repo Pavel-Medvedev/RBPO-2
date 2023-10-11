@@ -10,7 +10,3 @@ namespace RBPO {
 		};
 	};
 };
-
-double RBPO::Lab2::Variant15::Task4::f2(double x) {
-	return x < 4 ? cos(abs(2 + x)) : sqrt(x * x + 4);
-};

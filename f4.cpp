@@ -1,3 +1,5 @@
+module;
+#include <cmath>
 module Medvedev1bib21050;
 
 namespace RBPO {
@@ -5,14 +7,17 @@ namespace RBPO {
 		namespace Variant15 {
 			namespace Task3 {
 				double f4(double);
-				double a(int);
+				double a(unsigned short);
 			};
 		};
 	};
 };
 
 double RBPO::Lab2::Variant15::Task3::f4(double eps) {
-	double sum = 0; int i = 1;
-	for (double temp = a(0), temp1 = a(1); eps < temp - temp1; sum += temp, temp = temp1, temp1 = a(++i));
+	double sum = 0, temp = a(0), temp1 = a(1); int i = 1;
+	do
+	{
+		sum += temp, temp = temp1, temp1 = a(++i);
+	} while (eps < std::abs(temp - temp1));
 	return i - 1 ? sum : a(0);
 };

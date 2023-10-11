@@ -21,12 +21,12 @@ int main() {
 			int n; double x, eps;
 		case Task1:
 			std::cout << "You choose 1 Task to test." << std::endl
-					  << "Input x, n and epsilon:" << std::endl;
+				<< "Input x, n and epsilon:" << std::endl;
 			std::cin >> x >> n >> eps;
 			std::cout << "f1(x) = " << RBPO::Lab2::Variant15::Task1::f1(x) << std::endl
-					  << "f2(x) = " << RBPO::Lab2::Variant15::Task1::f2(x) << std::endl
-					  << "f3(n) = " << RBPO::Lab2::Variant15::Task1::f3(n) << std::endl
-					  << "f4(eps) = " << RBPO::Lab2::Variant15::Task1::f4(eps) << std::endl;
+				<< "f2(x) = " << RBPO::Lab2::Variant15::Task1::f2(x) << std::endl
+				<< "f3(n) = " << RBPO::Lab2::Variant15::Task1::f3(n) << std::endl
+				<< "f4(eps) = " << RBPO::Lab2::Variant15::Task1::f4(eps) << std::endl;
 			break;
 		case Task2:
 			std::cout << "You choose 2 Task to test." << std::endl
@@ -71,11 +71,15 @@ int main() {
 			break;
 		}
 	} while (q != 'Q');
-
-
 	return 0;
-}
+};
 /*
 * Data for test
+* Input:
 * 1 12.34 100 0.0001 2 12.34 100 0.0001 3 12.34 100 0.0001 4 12.34 100 0.0001 5 12.34 100 0.0001 Q
+* Output:
+* f1(x) = 0.264074
+* f2(x) = 12.501
+* f3(n) = 0.698073
+* f4(eps) = 0.693172
 */
