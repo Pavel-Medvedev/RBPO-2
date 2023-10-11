@@ -4,7 +4,7 @@ namespace RBPO {
 	namespace Lab2 {
 		namespace Variant15 {
 			namespace Task4 {
-				double a(unsigned short);
+				double a(long long);
 			};
 		};
 	};

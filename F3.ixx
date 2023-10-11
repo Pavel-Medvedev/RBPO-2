@@ -6,7 +6,7 @@ namespace RBPO {
 	namespace Lab2 {
 		namespace Variant15 {
 			namespace Task4 {
-				export double f3(unsigned short);
+				export double f3(unsigned long long);
 			};
 		};
 	};

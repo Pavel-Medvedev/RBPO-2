@@ -7,14 +7,14 @@ namespace RBPO {
 		namespace Variant15 {
 			namespace Task3 {
 				double f4(double);
-				double a(unsigned short);
+				double a(long long);
 			};
 		};
 	};
 };
 
 double RBPO::Lab2::Variant15::Task3::f4(double eps) {
-	double sum = a(0), temp = a(1), temp1 = a(2); int i = 2;
+	double sum = a(0), temp = a(1), temp1 = a(2); unsigned long long i = 2;
 	do {
 		sum += temp, temp = temp1, temp1 = a(++i);
 	} while (eps < std::abs(temp - temp1));

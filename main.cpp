@@ -18,7 +18,7 @@ int main() {
 					\nTo end the session input:\t\'Q\'" << std::endl;
 		std::cin >> q;
 		switch ((Choice)q) {
-			int n; double x, eps;
+			unsigned long long n; double x, eps;
 		case Task1:
 			std::cout << "You choose 1 Task to test." << std::endl
 				<< "Input x, n and epsilon:" << std::endl;
