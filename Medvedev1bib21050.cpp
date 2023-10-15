@@ -27,9 +27,6 @@ double RBPO::Lab2::Variant15::Task2::f2(double x) {
 	return sqrt(x * x + 4);
 };
 
-double RBPO::Lab2::Variant15::Task2::a(long long i) {
-	return (i % 2 == 0 ? 1 : -1) * (i + 1) / double(i * i + 2 * i + 1);
-};
 
 double RBPO::Lab2::Variant15::Task2::f3(unsigned long long n) {
 	double sum = a(0); unsigned long long i = 0;
@@ -45,3 +42,7 @@ double RBPO::Lab2::Variant15::Task2::f4(double eps) {
 	return sum;
 };
 
+
+double RBPO::Lab2::Variant15::Task2::a(long long i) {
+	return (i % 2 ? -1 : 1) * (i + 1) / double(i * i + 2 * i + 1);
+};

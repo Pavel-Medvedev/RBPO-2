@@ -1,6 +1,7 @@
 #include <iostream>
 
 import Medvedev1bib21050;
+
 enum Choice {
 	Task1 = '1', Task2 = '2', Task3 = '3', Task4 = '4', Task5 = '5'
 };
