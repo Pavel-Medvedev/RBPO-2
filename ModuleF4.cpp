@@ -11,7 +11,7 @@ namespace RBPO {
 };
 
 double RBPO::Lab2::Variant15::Task4::f4(double eps) {
-	double sum = a(0); unsigned long long i = 2;
-	for (double temp = a(1), temp1 = a(2); eps < abs(temp - temp1); sum += temp, temp = temp1, temp1 = a(++i));
+	double sum = a(0); unsigned long long i = 1;
+	for (double temp = sum, temp1 = a(1); eps < abs(temp - temp1); sum += temp1, temp = temp1, temp1 = a(++i));
 	return sum;
 };

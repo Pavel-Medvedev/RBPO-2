@@ -55,8 +55,8 @@ namespace RBPO {
 				};
 				
 				double f4(double eps) {
-					double sum = a(0); unsigned long long i = 2;
-					for (double temp = a(1), temp1 = a(2); eps < std::abs(temp - temp1); sum += temp, temp = temp1, temp1 = a(++i));
+					double sum = a(0); unsigned long long i = 1;
+					for (double temp = sum, temp1 = a(1); eps < std::abs(temp - temp1); sum += temp1, temp = temp1, temp1 = a(++i));
 					return sum;
 				};
 
@@ -89,8 +89,8 @@ namespace RBPO {
 				};
 
 				double f4(double eps) {
-					double sum = a(0); unsigned long long i = 2;
-					for (double temp = a(1), temp1 = a(2); eps < std::abs(temp - temp1); sum += temp, temp = temp1, temp1 = a(++i));
+					double sum = a(0); unsigned long long i = 1;
+					for (double temp = sum, temp1 = a(1); eps < std::abs(temp - temp1); sum += temp1, temp = temp1, temp1 = a(++i));
 					return sum;
 				}
 

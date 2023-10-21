@@ -14,9 +14,9 @@ namespace RBPO {
 };
 
 double RBPO::Lab2::Variant15::Task3::f4(double eps) {
-	double sum = 0, temp = a(0), temp1 = a(1); unsigned long long i = 1;
+	double sum = 0, temp = a(0), temp1 = temp; unsigned long long i = 0;
 	do {
-		sum += temp, temp = temp1, temp1 = a(++i);
+		sum += temp1, temp = temp1, temp1 = a(++i);
 	} while (eps < std::abs(temp - temp1));
 	return sum;
 };
